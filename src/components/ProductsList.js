@@ -18,8 +18,7 @@ function ProductsList(props) {
                                     props.onCheckAll(!checkStatus);
                                     setCheckStatus(!checkStatus);
                                 }}
-                                className='btn btn-outline-danger'
-                            >
+                                className='btn btn-outline-danger'>
                                 <i className={checkStatus ? 'bi bi-check2-circle' : 'bi bi-app'}></i>
                                 <span className='m-1'>{products.filter((p) => p.checked).length}</span>
                             </button>
@@ -29,8 +28,7 @@ function ProductsList(props) {
                                 onClick={() => {
                                     props.onDeleteChecked();
                                 }}
-                                className='btn btn-outline-danger'
-                            >
+                                className='btn btn-outline-danger'>
                                 <i className={'bi bi-trash'}> </i>
                             </button>
                         </th>

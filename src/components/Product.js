@@ -6,7 +6,10 @@ function Product() {
     const [products, setProducts] = useState([
         { id: 1, name: "Computer", price: 3400, checked: true },
         { id: 2, name: "Printer", price: 500, checked: false },
-        { id: 3, name: "Smart Phone", price: 1200, checked: true }
+        { id: 3, name: "Smart Phone", price: 1200, checked: true },
+        { id: 4, name: "Iphone", price: 100, checked: false },
+        { id: 5, name: "Nokia", price: 50, checked: true },
+        { id: 6, name: "galaxi", price: 200, checked: false },
     ]);
 
     const addProduct = (product) => {

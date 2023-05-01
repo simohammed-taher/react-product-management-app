@@ -2,12 +2,12 @@ import React, { useState } from 'react';
 
 function NewProduct(props) {
     const [name, setName] = useState("");
-    const [price, setPrice] = useState(0);
+    const [price, setPrice] = useState("");
 
     const handleAddProduct = (event) => {
         let product = { id: Date.now(), name: name, price: price };
         setName("");
-        setPrice(0);
+        setPrice("");
         props.onAdd(product);
     };
 
